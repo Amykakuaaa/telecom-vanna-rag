@@ -1,0 +1,7 @@
+Flask==3.1.3
+vanna==2.0.2
+openai==2.45.0
+PyMySQL==1.2.0
+SQLAlchemy==2.0.51
+pandas==3.0.3
+numpy==2.4.6
