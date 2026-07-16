@@ -83,9 +83,8 @@ for file in all_files:
 df_final = pd.concat(df_list, ignore_index=True)
 df_final.to_csv("合并后的大表.csv", index=False, encoding="utf-8-sig")
 
-
+### 列名映射（中文 → 英文）
 import_with_english_columns.py   
-列名映射（中文 → 英文） 
 导入时自动将中文列名映射为英文，避免 SQL 特殊字符问题：
 中文列名	          英文列名
 设备名称	        device_name
@@ -99,7 +98,7 @@ MEM>60	               mem_over_60
 日期	                   date
 
 
-快速启动（CentOS 7）
+### 快速启动（CentOS 7）
 1. 环境准备
 1.1 安装 Miniconda
 bash
@@ -136,7 +135,7 @@ docker run -d \
   --collation-server=utf8mb4_unicode_ci
 
 
-验证容器：
+### 验证容器：
 
 bash
 docker ps | grep mysql-vanna
@@ -152,7 +151,7 @@ cd /root/telecom_project
 python app.py
 访问地址：http://<虚拟机IP>:5100
 
-查询流程
+### 查询流程
 text
 用户输入问题（中文）
         ↓
@@ -173,7 +172,7 @@ LLM API（minimax-m2.1-w8a8）
      前端展示
 
 
-测试查询
+### 测试查询
 问题	预期结果
 统计开机状态的虚拟机数量	返回 331512
 CPU利用率最高的5台虚拟机	返回 Top 5 列表
