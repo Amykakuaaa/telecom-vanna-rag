@@ -21,7 +21,7 @@
 | AI 引擎 | Vanna + OpenAI 兼容 API |
 | LLM 模型 | minimax-m2.1-w8a8 |
 | 环境管理 | Conda（Python 3.11） |
-| 部署 | Docker + Docker Compose |
+| 部署 | Docker  |
 
 ---
 
