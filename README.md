@@ -104,7 +104,7 @@ MEM>60	               mem_over_60
 1. 环境准备
 1.1 安装 Miniconda
 bash
-# 下载兼容 CentOS 7 的旧版 Miniconda
+#### 下载兼容 CentOS 7 的旧版 Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh -O /tmp/miniconda_old.sh
 bash /tmp/miniconda_old.sh -b -p /root/miniconda3
 /root/miniconda3/bin/conda init bash
@@ -116,10 +116,10 @@ conda create -n vanna_env python=3.11 -y
 conda activate vanna_env
 1.3 安装依赖
 bash
-# conda 安装需要编译的包
+#### conda 安装需要编译的包
 conda install -c conda-forge numpy pandas greenlet
 
-# pip 安装纯 Python 包
+#### pip 安装纯 Python 包
 pip install vanna openai sqlalchemy pymysql flask 
 
 
