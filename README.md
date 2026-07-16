@@ -61,7 +61,7 @@ text
 | 数据来源 | 18 个每日 CSV 文件合并 |
 
 
-数据预处理（在 Windows 上执行）
+### 数据预处理（在 Windows 上执行）
 
 ```python
 import pandas as pd
@@ -83,6 +83,7 @@ for file in all_files:
 
 df_final = pd.concat(df_list, ignore_index=True)
 df_final.to_csv("合并后的大表.csv", index=False, encoding="utf-8-sig")
+```
 
 ### 列名映射（中文 → 英文）
 import_with_english_columns.py   
